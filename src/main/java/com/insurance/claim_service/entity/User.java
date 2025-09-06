@@ -5,6 +5,8 @@ import lombok.Getter;
 import lombok.Setter;
 import java.time.LocalDate;
 
+import com.insurance.claim_service.BloodGroup;
+
 @Entity
 @Table(name = "users") // This must match your table name in the database
 @Getter
@@ -30,8 +32,9 @@ public class User {
 
     private String address;
 
+    @Enumerated(EnumType.STRING)
     @Column(name = "blood_group")
-    private String bloodGroup;
+    private BloodGroup bloodGroup;
 
     // We don't need created_at and updated_at for this test
 }
