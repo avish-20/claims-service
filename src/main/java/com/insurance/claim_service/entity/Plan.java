@@ -22,7 +22,7 @@ public class Plan {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "plan_id")
-    private Long planId;
+    private Integer planId;
 
     @Column(name = "plan_name", nullable = false, unique = true, length = 255)
     private String planName;

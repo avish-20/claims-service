@@ -1,29 +1,24 @@
 package com.insurance.claim_service.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.util.*;
-
+import lombok.*;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import com.insurance.claim_service.enums.BloodGroup;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.util.List;
+
 @Entity
-@Table(name = "users") // This must match your table name in the database
+@Table(name = "users")
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
+@Builder
 @EntityListeners(AuditingEntityListener.class)
-@Getter
-@Setter
 public class User {
 
     @Id
@@ -31,7 +26,7 @@ public class User {
     @Column(name = "user_id")
     private Integer userId;
 
-     @Column(name = "email", nullable = false, unique = true, length = 150)
+    @Column(name = "name", nullable = false, length = 150)
     private String name;
 
     @Column(name = "email", nullable = false, unique = true, length = 150)
@@ -63,6 +58,4 @@ public class User {
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
     private List<Policy> policies;
-
-    // We don't need created_at and updated_at for this test
 }
