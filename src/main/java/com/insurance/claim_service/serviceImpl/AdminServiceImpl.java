@@ -1,0 +1,31 @@
+package com.insurance.claim_service.serviceImpl;
+
+import java.util.List;
+
+import com.insurance.claim_service.dto.ClaimDto;
+import com.insurance.claim_service.dto.UserDto;
+import com.insurance.claim_service.service.AdminService;
+
+public class AdminServiceImpl implements AdminService{
+
+    @Override
+    public List<ClaimDto> getAllClaims() {
+        return null;
+    }
+
+    @Override
+    public ClaimDto getClaimDetails(Long claimId) {
+        return null;
+    }
+
+    @Override
+    public ClaimDto updateClaimStatus(Long claimId, String status, String remarks) {
+        return null;
+    }
+
+    @Override
+    public UserDto findUser(Long userId) {
+        return null;
+    }
+    
+}
