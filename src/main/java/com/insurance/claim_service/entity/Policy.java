@@ -38,8 +38,8 @@ public class Policy {
     @Column(name = "policy_number", nullable = false, unique = true, length = 50)
     private String policyNumber;
 
-    @Column(name = "premium_amount", nullable = false, precision = 12, scale = 2)
-    private BigDecimal premiumAmount;
+    @Column(name = "premium_amount", nullable = false)
+    private Double premiumAmount;
 
     @Column(name = "start_date", nullable = false)
     private LocalDate startDate;
