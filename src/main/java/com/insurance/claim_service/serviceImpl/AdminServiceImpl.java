@@ -2,10 +2,13 @@ package com.insurance.claim_service.serviceImpl;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import com.insurance.claim_service.dto.ClaimDto;
 import com.insurance.claim_service.dto.UserDto;
 import com.insurance.claim_service.service.AdminService;
 
+@Service
 public class AdminServiceImpl implements AdminService{
 
     @Override

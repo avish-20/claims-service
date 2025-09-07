@@ -9,5 +9,5 @@ import java.util.List;
 
 @Repository
 public interface PolicyRepository extends JpaRepository<Policy, Long> {
-    List<Policy> findByUserId(Long userId);
+    List<Policy> findByUser_UserId(Long userId);
 }

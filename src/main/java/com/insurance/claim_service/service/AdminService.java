@@ -2,6 +2,8 @@ package com.insurance.claim_service.service;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import com.insurance.claim_service.dto.ClaimDto;
 import com.insurance.claim_service.dto.UserDto;
 

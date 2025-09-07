@@ -27,8 +27,8 @@ public class Plan {
     @Column(name = "plan_name", nullable = false, unique = true, length = 255)
     private String planName;
 
-    @Column(name = "coverage_amount", nullable = false, precision = 12, scale = 2)
-    private BigDecimal coverageAmount;
+    @Column(name = "coverage_amount", nullable = false)
+    private Double coverageAmount;
 
     @Column(name = "plan_description", length = 500)
     private String planDescription;

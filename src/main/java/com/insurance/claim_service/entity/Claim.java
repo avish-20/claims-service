@@ -17,12 +17,16 @@ import java.time.LocalDateTime;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Getter
+@Setter
 @Builder
 @EntityListeners(AuditingEntityListener.class)
 public class Claim {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Getter
+    @Setter
     @Column(name = "claim_id")
     private Integer claimId;
 
@@ -30,8 +34,8 @@ public class Claim {
     @JoinColumn(name = "policy_id", nullable = false)
     private Policy policy;
 
-    @Column(name = "claim_amount", nullable = false, precision = 12, scale = 2)
-    private BigDecimal claimAmount;
+    @Column(name = "claim_amount", nullable = false)
+    private Double  claimAmount;
 
     @Column(name = "hospital_name", nullable = false, length = 255)
     private String hospitalName;
