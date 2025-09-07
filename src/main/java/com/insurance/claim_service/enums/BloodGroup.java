@@ -1,4 +1,4 @@
-package com.insurance.claim_service;
+package com.insurance.claim_service.enums;
 
 public enum BloodGroup {
     A_POS("A+"),
