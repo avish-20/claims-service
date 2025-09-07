@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder
 public class PolicyDto {
-    private Long id;
+    private Integer id;
     private String policyNumber;
     private Double premiumAmount;
     private LocalDate startDate;

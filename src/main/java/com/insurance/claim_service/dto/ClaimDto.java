@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder
 public class ClaimDto {
-    private Long id;
+    private Integer id;
     private Double claimAmount;
     private String hospitalName;
     private String hospitalAddress;

@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder
 public class PlanDto {
-    private Long id;
+    private Integer id;
     private String planName;
     private Double coverageAmount;
     private String description;
