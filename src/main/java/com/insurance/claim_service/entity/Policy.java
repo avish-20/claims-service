@@ -25,7 +25,7 @@ public class Policy {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "policy_id")
-    private Long policyId;
+    private Integer policyId;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id", nullable = false)
