@@ -57,7 +57,7 @@ public class Claim {
 
     @Enumerated(EnumType.STRING)
     @Column(name = "claim_status", length = 20)
-    private ClaimStatus claimStatus = ClaimStatus.Pending;
+    private ClaimStatus claimStatus = ClaimStatus.PENDING;
 
     @Column(name = "assigned_level", length = 2)
     private String assignedLevel;
