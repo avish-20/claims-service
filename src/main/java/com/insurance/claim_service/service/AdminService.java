@@ -9,12 +9,14 @@ import com.insurance.claim_service.dto.UserDto;
 
 public interface AdminService {
     List<ClaimDto> getAllClaims();
+    
+    ClaimDto getClaimDetails(Integer claimId);
 
     List<ClaimDto> getClaimsByStatus(String claimStatus); // Approved or Rejected
 
     UserDto findUserById(Integer userId);
 
-    ClaimDto getClaimDetails(Integer claimId);
-
     ClaimDto updateClaimStatus(Integer claimId, String status, String adminRemarks);
+
+    Object categorizeClaim(Integer id);
 }
