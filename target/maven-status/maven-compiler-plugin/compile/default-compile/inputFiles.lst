@@ -1,3 +1,14 @@
-D:\SpringBoot\claim-service\src\main\java\com\insurance\claim_service\ClaimServiceApplication.java
-D:\SpringBoot\claim-service\src\main\java\com\insurance\claim_service\entity\User.java
-D:\SpringBoot\claim-service\src\main\java\com\insurance\claim_service\repository\UserRepository.java
+D:\SpringBoot\claims-service\claims-service\src\main\java\com\insurance\claim_service\ClaimServiceApplication.java
+D:\SpringBoot\claims-service\claims-service\src\main\java\com\insurance\claim_service\controller\ClaimController.java
+D:\SpringBoot\claims-service\claims-service\src\main\java\com\insurance\claim_service\dto\ClaimRequest.java
+D:\SpringBoot\claims-service\claims-service\src\main\java\com\insurance\claim_service\entity\Claim.java
+D:\SpringBoot\claims-service\claims-service\src\main\java\com\insurance\claim_service\entity\Plan.java
+D:\SpringBoot\claims-service\claims-service\src\main\java\com\insurance\claim_service\entity\Policy.java
+D:\SpringBoot\claims-service\claims-service\src\main\java\com\insurance\claim_service\entity\User.java
+D:\SpringBoot\claims-service\claims-service\src\main\java\com\insurance\claim_service\enums\BloodGroup.java
+D:\SpringBoot\claims-service\claims-service\src\main\java\com\insurance\claim_service\enums\ClaimStatus.java
+D:\SpringBoot\claims-service\claims-service\src\main\java\com\insurance\claim_service\enums\PolicyStatus.java
+D:\SpringBoot\claims-service\claims-service\src\main\java\com\insurance\claim_service\repository\ClaimRepository.java
+D:\SpringBoot\claims-service\claims-service\src\main\java\com\insurance\claim_service\repository\UserRepository.java
+D:\SpringBoot\claims-service\claims-service\src\main\java\com\insurance\claim_service\service\ClaimCategorizationService.java
+D:\SpringBoot\claims-service\claims-service\src\main\java\com\insurance\claim_service\service\ClaimService.java
