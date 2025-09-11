@@ -40,7 +40,7 @@ public class ClaimService {
         newClaim.setCategory(request.getCategory());
 
         // Set initial status and level
-        newClaim.setClaimStatus(ClaimStatus.Pending);
+        newClaim.setClaimStatus(ClaimStatus.PENDING);
         newClaim.setAssignedLevel(assignedLevel);
         newClaim.setSubmissionDate(LocalDateTime.now());
 

@@ -45,7 +45,7 @@ public class User {
     private String address;
 
     @Enumerated(EnumType.STRING)
-    @Column(name = "blood_group", length = 3)
+    @Column(name = "blood_group")
     private BloodGroup bloodGroup;
 
     @CreatedDate
