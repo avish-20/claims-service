@@ -8,7 +8,6 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import com.insurance.claim_service.enums.ClaimStatus;
 
-import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
@@ -55,6 +54,7 @@ public class Claim {
     @Column(name = "documents_url", length = 255)
     private String documentsUrl;
 
+    @Builder.Default
     @Enumerated(EnumType.STRING)
     @Column(name = "claim_status", length = 20)
     private ClaimStatus claimStatus = ClaimStatus.PENDING;
