@@ -1,13 +1,11 @@
 package com.insurance.claim_service.dto;
 
-import java.math.BigDecimal;
 import java.time.LocalDate;
 
 import com.insurance.claim_service.enums.ClaimStatus;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

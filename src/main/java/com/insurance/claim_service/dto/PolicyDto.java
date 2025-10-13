@@ -1,6 +1,5 @@
 package com.insurance.claim_service.dto;
 
-import java.math.BigDecimal;
 import java.time.LocalDate;
 
 import lombok.AllArgsConstructor;

@@ -32,7 +32,7 @@ public class ClaimService {
         // Step 3: Create a new Claim entity and populate it with data.
         Claim newClaim = new Claim();
         newClaim.setPolicy(new Policy()); // Hardcoded for now; replace with policy.getPolicyNumber() when policy lookup is implemented
-        newClaim.setClaimAmount(request.getClaimAmount());
+        newClaim.setClaimAmount(request.getClaimAmount() != null ? request.getClaimAmount().doubleValue() : null);
         newClaim.setHospitalName(request.getHospitalName());
         newClaim.setHospitalAddress(request.getHospitalAddress());
         newClaim.setDateOfAdmission(request.getDateOfAdmission());
